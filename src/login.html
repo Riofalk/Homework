@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <script src="./login.js"></script>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <h1 class="title">Movie rental</h1>
+      <div class="form-container">
+        <div class="sign-in-container">
+          <form>
+            <label for="email"
+              >Email:
+              <input type="text" id="email" name="email" placeholder="email" />
+            </label>
+
+            <label for="password"
+              >Password:
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="password"
+              />
+            </label>
+          </form>
+          <div class="button-container">
+            <button class="sign-in" onclick="validation()">Sign in</button>
+          </div>
+        </div>
+        <div class="register-container hidden" id="register-container">
+          <form>
+            <label for="name"
+              >Name:
+              <input type="text" id="name" name="name" placeholder="name" />
+            </label>
+
+            <label for="sname"
+              >Surname:
+              <input
+                type="text"
+                id="sname"
+                name="sname"
+                placeholder="surname"
+              />
+            </label>
+
+            <label for="email"
+              >Email:
+              <input
+                type="text"
+                id="regEmail"
+                name="email"
+                placeholder="email"
+              />
+            </label>
+
+            <label for="email-repeat"
+              >Email again:
+              <input
+                type="text"
+                id="emailRepeat"
+                name="email-repeat"
+                placeholder="email"
+              />
+            </label>
+
+            <label for="password"
+              >Password:
+              <input
+                type="password"
+                id="regPassword"
+                name="password"
+                placeholder="password"
+              />
+            </label>
+
+            <label for="password-repeat"
+              >Password again:
+              <input
+                type="password"
+                id="passwordRepeat"
+                name="password-repeat"
+                placeholder="password"
+              />
+            </label>
+          </form>
+          <div class="button-container">
+            <button class="register" onclick="validateForm()">Register</button>
+          </div>
+        </div>
+        <div class="button-container">
+          <button
+            id="register-show-button"
+            class="register"
+            onclick="showForm()"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <ul>
+        <li>Made by: Nikita Bogomazovs</li>
+        <li>2023</li>
+      </ul>
+    </footer>
+  </body>
+</html>
