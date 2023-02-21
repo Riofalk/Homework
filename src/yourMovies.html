@@ -1,59 +1,59 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/yourMovies.css" />
-    <script src="./yourMovies.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter"
-      rel="stylesheet"
-    />
-    <script src="./router.js" defer></script>
-  </head>
-  <body  onload="generateMovies()">
-    <div class="main-container">
-      <h1 class="title">Movie rental</h1>
 
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="home"><a href="./home.html">Home</a></li>
-          <li class="your-movies">
-            <a href="./yourMovies.html">Your movies</a>
-          </li>
-          <li class="profile"><a href="./profile.html">Profile</a></li>
-          <li class="log-out" onclick="logOut()">Log out</li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/src/yourMovies.css" />
+  <script src="./yourMovies.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+  <script src="./router.js" defer></script>
+</head>
 
-      <div class="movies-containter">
-        <h2 class="title">Your movies</h2>
-        <h2 class="hidden title" id="emptyBasket">Empty</h2>
-        <div class="table-container">
-          
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Genre</th>
-                <th>Time</th>
-                <th>Price</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="your-movies"></tbody>
-          </table>
-        </div>
+<body onload="generateMovies()">
+  <div class="main-container">
+    <h1 class="title">Movie rental</h1>
+
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="home"><a href="./home.html">Home</a></li>
+        <li class="your-movies">
+          <a href="./yourMovies.html">Your movies</a>
+        </li>
+        <li class="profile"><a href="./profile.html">Profile</a></li>
+        <li class="log-out" onclick="logOut()">Log out</li>
+      </ul>
+    </nav>
+
+    <div class="movies-containter">
+      <h2 class="title">Your movies</h2>
+      <h2 class="hidden title" id="emptyBasket">Empty</h2>
+      <div class="table-container">
+
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Genre</th>
+              <th>Time</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="your-movies"></tbody>
+        </table>
       </div>
-
-      <footer>
-        <ul>
-          <li>Made by: Nikita Bogomazovs</li>
-          <li>2023</li>
-        </ul>
-      </footer>
     </div>
-  </body>
+
+    <footer>
+      <ul>
+        <li>Made by: Nikita Bogomazovs</li>
+        <li>2023</li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
 </html>
